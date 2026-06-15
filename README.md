@@ -6,6 +6,6 @@ A simple project to practice GitHub workflows.
 
 Clone this repo and explore!
 
-## Contibuting
+## Contributing
 
 Pull requests are welcome.
