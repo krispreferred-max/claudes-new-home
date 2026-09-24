@@ -77,7 +77,7 @@ def next_touch(lead, today):
 def load_leads():
     if not LEADS_FILE.exists():
         sys.exit(f"Can't find {LEADS_FILE.name}. Is it in the same folder as this script?")
-    with LEADS_FILE.open(newline="", encoding="utf-8") as handle:
+    with LEADS_FILE.open(newline="", encoding="utf-8-sig") as handle:
         return [row for row in csv.DictReader(handle) if (row.get("name") or "").strip()]
 
 
